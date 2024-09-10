@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url("images/background3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+}
+
+
+nav ul {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 50, 40, 0.05);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+main {
+    padding: 20px;
+}
+
+#weather-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Changed from row to column */
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 50, 40, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 45px;
+
+}
+
+
+
+.input-box {
+   background-color: rgba(0, 0, 0, 0);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  text-align: center;
+  color: white;
+  outline: none;
+  font-size: 20px;
+  width: 360px;
+  margin-bottom: 16px;
+}
+
+.kontakt-textarea {
+
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  text-align: left;
+  color: white;
+  outline: none;
+  font-size: 16px;
+  width: 450px;
+  height: 200px;
+  resize: none;
+margin-bottom: 20px;
+}
+
+.a-button {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.fill {
+  background: rgba(0, 212, 255, 0.9);
+  color: rgba(255,255,255,0.95);
+  filter: drop-shadow(0);
+  font-weight: bold;
+  transition: all .3s ease;
+}
+
+.fill:hover{
+  transform: scale(1.125);
+  border-color: rgba(255, 255, 255, 0.9);
+  filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
+  transition: all .3s ease;
+}
+
+#api-link {
+    color: white;
+    margin-bottom: 20px;
+}
+
+

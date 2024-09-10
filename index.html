@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vremenska prognoza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div id="header">
+            <ul>
+                <li><a href="index.html">Prognoza</a></li>
+                <li><a href="about.html">O sajtu</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section id="weather-section">
+            <h2>VREMENSKA PROGNOZA</h2>
+            <div id="search-container">
+                <input type="text" id="city-input" placeholder="Unesite ime grada">
+                <button id="search-button" class="fill">Pretraga</button>
+            </div>
+            <label>
+                <input type="checkbox" id="realtime-checkbox"> Trenutno vreme
+            </label>
+            <span id="loc-data-container"></span>
+            <div id="weather-cards-container"></div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="weather-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-details"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
